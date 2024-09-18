@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    margin:50px;
+    
+   
+}
+#input{
+    margin-top: 10%;
+    
+}
+#output{
+    width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-top: 50px;
+    background-color: rgb(204, 145, 72);
+    padding-top: 40px;
+    padding-right: 60px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    box-shadow: 3px 5px 2px 1px rgb(112, 101, 101);
+    
+   
+}
+
+.imgsrc img{
+    width: 150px;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow:0px 0px 1px 1px black;
+    overflow: hidden;
+    
+}
+.imgsrc p{
+    margin-top: 30px;
+    margin-left: 37%;
+    background-color: aqua;
+    width: 110px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow:0px 0px 1px 1px black;
+}
+
+#input button{
+    margin-left: 30%;
+    background-color: red;
+    color: white;
+    
+} 
+#input button:hover{
+    background-color: green;
+    color: white;
+}
+#output button{
+    margin-top: 20px;
+    margin-left: 50%;
+}
+
+@media(min-width:571px) and (max-width:928px){
+   body{
+    flex-direction: column;
+   }
+    #output{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        width: 600px;
+    
+    }
+    #output button{
+        margin-top: 20px;
+        margin-left: 53%;
+    }
+    .imgsrc p{
+        margin-top: 30px;
+        margin-left: 37%;
+    }
+}
+@media(max-width:570px) {
+    body{
+        flex-direction: column;
+       }
+
+    #output{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width: 400px;
+    
+    }
+    #output button{
+        margin-top: 20px;
+        margin-left: 50%;
+    }
+    .imgsrc p{
+        margin-top: 30px;
+    margin-left: 37%;
+    }
+}

@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(231, 171, 99);
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+
+}
+img{
+    width: 300px;
+    border: 5px 4px solid black;
+    box-shadow: 2px 3px brown;   
+    animation: 1s ease all ;
+}
+@keyframes{
+    100%{
+        transmission
+    }
+}
+
